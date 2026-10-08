@@ -5,7 +5,7 @@ require("dotenv").config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 const CLUB_TAG = "#82982PR9C";
-const API_BASE = "https://api.brawlstars.com/v1";
+const API_BASE = "https://bsproxy.royaleapi.dev/v1";
 
 app.use(express.static(path.join(__dirname, "public")));
 

@@ -41,6 +41,6 @@ app.get("/api/club/members", async (_req,res) => {
 
 app.get("/api/health", (_req,res)=>res.json({ok:true, clubTag:CLUB_TAG}));
 
-app.get("*", (_req,res)=>res.sendFile(path.join(__dirname,"public","index.html")));
+app.get("/{*splat}", (_req,res)=>res.sendFile(path.join(__dirname, "public", "index.html")));
 
 app.listen(PORT, ()=>console.log(`Dashboard em http://localhost:${PORT}`));

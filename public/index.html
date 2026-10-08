@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Painel do Clã • #82982PR9C</title><link rel="stylesheet" href="/style.css">
+</head><body>
+<header><div class="brand"><b>★ BRAWL CLÃ</b><small>#82982PR9C</small></div><nav><a href="#ranking">Ranking</a><a href="#regras">Regras</a></nav></header>
+<main>
+<section class="hero"><div><span>PAINEL DO CLUBE</span><h1 id="name">Carregando...</h1><p id="desc">Buscando os dados reais do Brawl Stars.</p><button onclick="load()">↻ Atualizar</button></div><div class="card"><small>TROFÉUS DO CLUBE</small><strong id="clubTrophies">—</strong><em id="updated">—</em></div></section>
+<section class="stats"><div><small>Membros</small><b id="count">—</b></div><div><small>Média</small><b id="avg">—</b></div><div><small>Maior</small><b id="max">—</b></div><div><small>Rebaixamento</small><b id="danger">—</b></div></section>
+<section id="ranking" class="panel"><div class="head"><div><span>RANKING</span><h2>Membros do clube</h2></div><input id="q" placeholder="Pesquisar jogador" oninput="render()"></div>
+<div class="table"><table><thead><tr><th>#</th><th>Jogador</th><th>Cargo</th><th>Troféus</th><th>Semana</th><th>Status</th></tr></thead><tbody id="rows"></tbody></table></div></section>
+<section class="panel" id="regras"><span>REGRAS</span><h2>Regras do clã</h2><ul><li>Último colocado da lista sai direto.</li><li>Quem subir menos de <b>1.000 troféus na semana</b> entra na zona de rebaixamento.</li><li>Se aparecer alguém com mais troféus, a pessoa na zona de rebaixamento pode sair para dar lugar.</li></ul><p class="note">O histórico semanal precisa ser armazenado pelo servidor; a API fornece o estado atual do clube.</p></section>
+</main><footer>Brawl Stars é propriedade da Supercell. Dashboard independente.</footer>
+<script src="/app.js"></script></body></html>
